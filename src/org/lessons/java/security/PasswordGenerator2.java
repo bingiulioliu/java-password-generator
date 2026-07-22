@@ -13,13 +13,13 @@ public class PasswordGenerator2 {
         Scanner in = new Scanner(System.in);
 
         System.out.print("Inserisci il nome: ");
-        nome = in.next();
+        nome = in.nextLine();
 
         System.out.print("Inserisci il cognome: ");
-        cognome = in.next();
+        cognome = in.nextLine();
 
         System.out.print("Inserisci il tuo colore preferito: ");
-        colore = in.next();
+        colore = in.nextLine();
         
         System.out.print("Inserisci il tuo giorno di nascita: ");
         giorno = in.nextInt();
