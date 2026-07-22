@@ -66,3 +66,29 @@ public class PasswordGenerator2 {
         in.close();
     }
 }
+
+---
+
+## 📺 Esempio di Esecuzione nel Terminale
+
+```text
+Inserisci il nome: Pinco
+Inserisci il cognome: Pallo
+Inserisci il tuo colore preferito: magenta
+Inserisci il tuo giorno di nascita: 12
+Inserisci il tuo mese di nascita: 5
+Inserisci il tuo anno di nascita: 1994
+
+La password è: Pinco-Pallo-magenta-2011
+
+```
+
+---
+
+## 💡 Note di Ripasso e Best Practice
+
+* 📥 **Unico `Scanner**`: Viene aperta una sola istanza della classe `Scanner` gestita con l'oggetto `in` per tutte le letture da `System.in`, ottimizzando l'uso delle risorse di sistema.
+* 🚪 **Chiusura della Risorsa (`in.close()`)**: È buona norma chiudere lo `Scanner` a fine programma per rilasciare il flusso di input ed evitare *warning* da parte dell'IDE.
+* ➕ **Differenza tra Somma e Concatenazione**:
+* `giorno + mese + anno` effettua un'**operazione matematica** (es. `12 + 5 + 1994` = `2011`) perché applicata a variabili di tipo `int`.
+* L'uso del `+` con le stringhe (`nome + "-" + ...`) opera invece una **concatenazione di testo**.
